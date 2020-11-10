@@ -177,7 +177,7 @@ $show->comments(function ($model) {
     $grid->model()->where('post_id', $model->id);
     
     // 设置路由
-    $grid->resource('comments');
+    $grid->setResource('comments');
 
     $grid->id();
     $grid->content()->limit(10);
@@ -278,7 +278,7 @@ $show->permissions(function ($model) {
     });
 
     // 设置路由
-    $grid->resource('auth/permissions');
+    $grid->setResource('auth/permissions');
 
     $grid->id;
     $grid->name;
